@@ -1,13 +1,13 @@
 {
-  "name": "# Slack Link redirect",
+  "name": "Habracomments",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Redirects Slack links",
-  "permissions": ["tabs", "*://*.slack.com/*"],
+  "description": "Sorts habracomments by rating",
+  "permissions": ["tabs", "*://*.habr.com/*"],
   "content_scripts": [
     {
-      "matches": ["*://*.slack.com/*"],
-      "js": ["index.js"]
+      "matches": ["*://*.habr.com/*"],
+      "js": ["jquery-3.2.1.slim.min.js", "index.js"]
     }
   ]
 }
